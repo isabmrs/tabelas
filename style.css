@@ -1,72 +1,70 @@
 body {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 } 
 
 table {
     border-collapse: separate;
-    margin: 20px auto;
+    margin: 10px auto;
     overflow: visible;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Helvetica;
+    table-layout: fixed;
+    border-spacing: 6px;
 }
 td {
-    width: 60px;
-    height: 50px;
+    width: clamp(30px, 10vw, 30px);
+    height: clamp(20px, 20vw, 20px);
     text-align: center;
     vertical-align: middle;
     border-radius: 5px;
-    padding:5px;
+    padding:7px;
     position: relative;
     overflow:visible;
     transition: transform 0.2s ease, z-index 0.2s;
-    z-index:1;
+    z-index:0;
+
 } 
 td:hover {
-    transform: scale(1.3);
+    transform: scale(2.3);
     z-index: 10;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 .elemento{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     color: white;
+    width: 30px;
+    height: 36px;
 }
 .numero {
-    font-size:12px;
-    align-self:left;
+    font-size: clamp(7px, 0.5vw, 6px);
 }
 .simbolo {
-    font-size: 20px;
+    font-size: clamp(17px,1.2vw,17px);
     font-weight: bold;
 }
 .nome {
-    font-size: 10px;
+    font-size: clamp(8px,1vw,8px);
 }
 .massa{ 
-    font-size: 9px;
+    font-size: clamp(1px, 0.8vw, 13px);
     margin-top: 2px;
 }
-.separador {
-  width: 50px;
-  height:1px;
-  border: 1px;
-  pointer-events: none;
-}
 
-.naometais {background-color: #6495ED; }
-.alcalinos {background-color: 	#4169E1;}
-.terrosos {background-color: #DB7093;}
-.transicao {background-color: #F4A460;}
-.metaispostran {background-color: #D8BFD8;}
-.gasesnobres {background-color: #d65151fd ;}
-.metaloides {background-color: #c46cb1fd;}
-.lantanideos {background-color: #d6c251fd;}
-.desconhecido{background-color: #708090;}
-.actinideos{background-color: #8FBC8F;}
-.vazio{ background-color: transparent; border: none; pointer-events: none;}
-.outro {width:6px; height:50px;}
+.naometais {background-color: #051532; }
+.alcalinos {background-color: 	#004362;}
+.terrosos {background-color: #003900;}
+.transicao {background-color: #67000f;}
+.metaispostran {background-color: #370037;}
+.gasesnobres {background-color: #00312afd ;}
+.metaloides {background-color: #2d0068fd;}
+.lantanideos {background-color: #5b4e00fd;}
+.desconhecido{background-color: #29292c;}
+.actinideos{background-color: #511853;}
+.vazio{ background-color: transparent; pointer-events: none; width: 2px; border:none; padding: 2px;}
+.espaçoverde {background-color: #5b4e00fd; border-radius:15; width: 2px;pointer-events: none; padding: 1px;}
+.espaçoroxo {background-color: #511853; border-radius: 5px; width:2px ; pointer-events: none; padding: 1px;}
 
 
 
