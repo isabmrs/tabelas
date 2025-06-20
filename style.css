@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+} 
+
+table {
+    border-collapse: separate;
+    margin: 20px auto;
+    overflow: visible;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td {
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    padding:5px;
+    position: relative;
+    overflow:visible;
+    transition: transform 0.2s ease, z-index 0.2s;
+    z-index:1;
+} 
+td:hover {
+    transform: scale(1.3);
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.elemento{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+.numero {
+    font-size:12px;
+    align-self:left;
+}
+.simbolo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.nome {
+    font-size: 10px;
+}
+.massa{ 
+    font-size: 9px;
+    margin-top: 2px;
+}
+.separador {
+  width: 50px;
+  height:1px;
+  border: 1px;
+  pointer-events: none;
+}
+
+.naometais {background-color: #6495ED; }
+.alcalinos {background-color: 	#4169E1;}
+.terrosos {background-color: #DB7093;}
+.transicao {background-color: #F4A460;}
+.metaispostran {background-color: #D8BFD8;}
+.gasesnobres {background-color: #d65151fd ;}
+.metaloides {background-color: #c46cb1fd;}
+.lantanideos {background-color: #d6c251fd;}
+.desconhecido{background-color: #708090;}
+.actinideos{background-color: #8FBC8F;}
+.vazio{ background-color: transparent; border: none; pointer-events: none;}
+.outro {width:6px; height:50px;}
+
+
+
