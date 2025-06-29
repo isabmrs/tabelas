@@ -1,40 +1,38 @@
 body {
-    background-color: rgb(0, 0, 0);
-    font-family: Helvetica;
+    background-color: rgb(0, 0, 0);/*estabelecendo a cor do fundo*/
+    font-family: Helvetica; /*definindo a fonte*/
 } 
 
 table {
-    border-collapse: separate;
-    margin: 20px auto;
-    overflow: visible;
-    font-family:Helvetica;
-    table-layout: fixed;
-    border-spacing: 6px;
+    border-collapse: separate; /*para que as bordas fiquem separadas*/
+    margin: auto; /*o tamanho da tabela até o "começo" da página*/
+    overflow: visible; /*controla o que acontece quando o conteúdo passa do tamanho da caixa*/
+    table-layout: fixed; /*controla como a largura das colunas de uma tabela é definida, nesse caso, o fixed vai usar o espaço da primeira linha*/
+    border-spacing: 6px; /*espaçamento entre as cédulas*/
 }
-td {
-    width: clamp(30px, 10vw, 30px);
-    height: clamp(20px, 20vw, 20px);
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 5px;
-    padding:7px;
-    position: relative;
-    overflow:visible;
-    transition: transform 0.2s ease, z-index 0.2s;
-    z-index:0;
+td { /*aqui iremos definir como os elementos serão */
+    width: clamp(20px, 10vw, 20px); /*definimos a largura com um tamanho minimo, ideal e maximo*/
+    height: clamp(20px, 20vw, 20px); /*a altura com um tamanho minimo, ideal e maximo*/
+    text-align: center; /*centralizamos o texto dentro do elemento */
+    border-radius: 5px; /*arredondamento das cedulas*/
+    position: relative; /*permite mover o elemento*/
+    overflow: visible; /*deixa o conteudo que sai da caixa aparecer */
+    padding:7px; /*espaço interno entre o conteudo e a borda do elemento*/
+    transition: transform 0.3s ease, z-index 0.3s;/*anima os elemento suavemente*/
+    z-index:1; /*define a camada do elemento*/
 
 } 
-td:hover {
-    transform: scale(1.8);
-    z-index: 10;
-    box-shadow: 0 0 2px rgb(255, 255, 255);
+td:hover { /*estabelece a animação ao passar o cursor em algum elemento*/
+    transform: scale(1.7); /*aumenta a cedula ao clicar*/
+    z-index: 4; /*faz a cedula ficar acima das outras*/
+    box-shadow: 0 0 12px rgb(0, 0, 0); /*a sombra da cedula ao ser "expandida" na tela*/
 }
 .elemento{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    display:flex; /*facilita o alinhamento interno dos elementos*/
+    flex-direction: column; /*organiza os elementos em coluna*/
+    align-items: center; /*alinha os elementos no centro*/
+    justify-content: center; /*centraliza os itens verticalmente*/
+    color: white; /*define a cor dos elementos*/
     width: 50px;
     height: 45px;
 }
@@ -66,6 +64,3 @@ td:hover {
 .vazio{ background-color: transparent; pointer-events: none; width: 2px; border:none; padding: 2px;}
 .espaçoverde {background-color: #5b4e00fd; border-radius:15; width: 2px;pointer-events: none; padding: 1px;}
 .espaçoroxo {background-color: #511853; border-radius: 5px; width:2px ; pointer-events: none; padding: 1px;}
-
-
-
