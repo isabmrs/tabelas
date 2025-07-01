@@ -2,43 +2,51 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Tabela 3</title>
+    <title>Tabela 1</title>
     <meta name="description" content="Tabela ">
     <meta name="keywords" content="Exercícios de tabelas">
     <meta name="author" content="Isabela Martins Soares 1ºDSA">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-
-<body>
-
-<style>
+    
+    <style>
+  body {
+    font-family: Arial;
+  }
   table {
     border-collapse: collapse; /*nao deixa as bordas se unirem, evitando bordas duplas*/
+    width: 70%;
+    height: 30%;
+    align-items: center;
+    background: ;
+    border-color: beige;
+    padding: 10px;
   }
-
   .bordas-coluna { /*estilo para as bordas das colunas*/
     border-left: 3px solid #e91e63;
     border-right: 3px solid #e91e63;
     background-color: #f4e1b1;
   }
-
   .bordas-cima{ /*estilo para as bordas de cima*/
     border-top: 3px solid #e91e63;
   }
-
   .bordas-baixo { /*estilo para as bordas de baixo*/
     border-bottom: 3px solid #e91e63;
   }
+  .corverde {
+    background-color: #c4ff98;
+  }
 </style>
 
-    <font face="Arial"> 
-    <table width="70%" height="30%" align="center" border="1px" cellpadding="10px" cellspacing="30px" background="" bordercolor="#f0f2f2">  
+</head>
+
+<body>
+
+    <table border="1px" cellpadding="10px"> 
         <tr> 
-            <thead align="center">
+            <thead>
             <th></th>
             <th>Seg</th>
-            <th bgcolor="#d5f5e3">Ter</th>
+            <th class="corverde">Ter</th>
             <th>Qua</th>
             <th>Qui</th>
             <th class="bordas-coluna bordas-cima">Sex</th>
@@ -46,11 +54,11 @@
             <th>Dom</th> 
         </tr>
     </thead>
-        <tbody align="center">
-            <tr bgcolor=>
+        <tbody>
+            <tr>
                 <th>Primeiro Período</td>
                 <td>Inglês</td>
-                <td bgcolor="#d5f5e3"></td>
+                <td class="corverde">Inglês</td>
                 <td> </td> 
             <td>Alemão</td>
             <td class="bordas-coluna">Holândes</td>
@@ -61,7 +69,7 @@
             </tr>
             <tr> <th>Segundo Período</th>
             <td>Inglês</td>
-            <td bgcolor="#d5f5e3">Inglês</td> 
+            <td class="corverde">Inglês</td> 
             <td></td>
             <td> Alemão </td>
             <td class="bordas-coluna">Holândes</td>
@@ -71,7 +79,7 @@
 
             <tr> <th>Terceiro Período</th>
                 <td></td>
-                <td bgcolor="#d5f5e3">Alemão</td> 
+                <td class="corverde">Alemão</td> 
                 <td></td>
                 <td>Alemão</td>
                 <td class="bordas-coluna">Holândes</td>
@@ -81,7 +89,7 @@
 
                 <tr> <th>Quarto Período</th>
                     <td> </td>
-                    <td bgcolor="#d5f5e3">Inglês</td> 
+                    <td class="corverde">Inglês</td> 
                     <td> </td>
                     <td>Inglês</td>
                     <td class="bordas-baixo bordas-coluna">Holândes</td>
@@ -96,8 +104,8 @@
     <summary>Outras tabelas:</summary>
     <p><a href="tabela1.html"> Tabela 1</a> </p>
   <p><a href="tabela2.html"> Tabela 2</a> </p>
-    <p><a href="tabela4.html"> Tabela 4</a></p>
+  <p><a href="tabela4.html"> Tabela 4</a></p>
 </details>
-    </font>          
+      
 </body>
 </html>
